@@ -1,0 +1,42 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  margin: 0;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+  background-color: #f0f0f0;
+}
+
+.faq-container {
+}
+
+.faq {
+  margin-bottom: 3em;
+  border: 1px solid;
+  border-radius: 1em;
+  padding: 2em;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.faq-title {
+  margin: 0;
+}
+
+.faq-text {
+  margin: 2em 0 0 0;
+  display: none;
+}
+
+.faq.show .faq-text {
+  display: block;
+}

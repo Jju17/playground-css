@@ -1,0 +1,88 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  overflow: hidden;
+}
+
+.container {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+}
+
+.split {
+  height: 100%;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: width 1s ease-in-out;
+}
+
+.split-one {
+  background: url("https://50projects50days.com/projects/split-landing-page/ps.jpg")
+    right / cover rgba(87, 84, 236, 0.7);
+  background-blend-mode: multiply;
+}
+
+.split-two {
+  background: url("https://50projects50days.com/projects/split-landing-page/xbox.jpg")
+    rgba(43, 43, 43, 0.5);
+  background-blend-mode: overlay;
+  background-position: center;
+  background-size: cover;
+}
+
+.action {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-width: 500px;
+}
+
+.action > h1 {
+  color: white;
+  font-size: 4em;
+}
+
+.btn {
+  border: solid 3px white;
+  background: none;
+  color: white;
+  margin: 0 auto;
+  padding: 1.5em 4em;
+}
+
+.split-one .btn:hover {
+  background: #5654eb;
+  border: solid 3px #5654eb;
+}
+
+.split-two .btn:hover {
+  background: #1c7a1d;
+  border: solid 3px #1c7a1d;
+}
+
+.container.left > .split-one {
+  width: 70%;
+  z-index: 2;
+}
+.container.left > .split-two {
+  width: 30%;
+  z-index: 1;
+}
+
+.container.right > .split-one {
+  width: 30%;
+  z-index: 1;
+}
+.container.right > .split-two {
+  width: 70%;
+  z-index: 2;
+}
